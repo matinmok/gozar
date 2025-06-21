@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خرید IP ایران گذر برای دسترسی به سایت‌های ایرانی از خارج کشور - همراه بانک، پیام‌رسان‌ها و خدمات داخلی">
+    <meta name="keywords" content="IP ایران, آی‌پی ایران, دسترسی از خارج, همراه بانک, پیام‌رسان ایرانی, ایران گذر">
+    <meta name="robots" content="index, follow">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="خرید IP ایران گذر - دسترسی به سایت‌های ایرانی">
+    <meta name="twitter:description" content="IP ایران برای دسترسی آسان به همراه بانک، پیام‌رسان‌ها و سایت‌های ایرانی از خارج کشور">
+    <meta property="og:title" content="خرید IP ایران گذر - دسترسی به سایت‌های ایرانی">
+    <meta property="og:description" content="IP ایران برای دسترسی آسان به همراه بانک، پیام‌رسان‌ها و سایت‌های ایرانی از خارج کشور">
+    <meta property="og:type" content="website">
+    <title>خرید IP ایران گذر - دسترسی به سایت‌های ایرانی از خارج</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7C3AED',
+                        'primary-dark': '#5B21B6',
+                        'primary-light': '#A855F7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Vazirmatn', sans-serif; }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: #ffffff;
+            border: 2px solid #7C3AED;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .review-card:hover {
+            transform: scale(1.02);
+            border-color: #5B21B6;
+        }
+        .review-card h4 {
+            color: #5B21B6;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .review-card p {
+            color: #374151;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        .faq-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #ffffff;
+            border: 2px solid #7C3AED;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+        .faq-item:hover {
+            border-color: #5B21B6;
+        }
+        .faq-item details {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        .faq-item summary {
+            padding: 1rem 1.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #5B21B6;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: #f8fafc;
+            transition: background 0.3s;
+        }
+        .faq-item summary:hover {
+            background: #e0f2fe;
+        }
+        .faq-item summary::before {
+            content: '❓';
+            margin-left: 0.5rem;
+            font-size: 1rem;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '↓';
+            margin-right: auto;
+            font-size: 1rem;
+            transition: transform 0.3s;
+        }
+        .faq-item details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .faq-item .faq-content {
+            padding: 1.5rem;
+            color: #374151;
+            font-size: 1rem;
+            line-height: 1.5;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+        .faq-item details[open] .faq-content {
+            max-height: 500px;
+            opacity: 1;
+        }
+        .nav-divider {
+            color: #6b7280;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        @media (max-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .review-card {
+                padding: 1rem;
+            }
+            .review-card h4 {
+                font-size: 1rem;
+            }
+            .review-card p {
+                font-size: 0.9rem;
+            }
+            .faq-item summary {
+                font-size: 1rem;
+                padding: 0.75rem 1rem;
+            }
+            .faq-item .faq-content {
+                font-size: 0.9rem;
+                padding: 1rem;
+            }
+            #purchase-popup > div {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                width: calc(100% - 2rem);
+            }
+            .home-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .home-buttons a {
+                width: 100%;
+                text-align: center;
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 640px) {
+            .home-buttons a {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md py-4 fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="text-xl font-bold text-primary">
+                    <span class="bg-primary text-white rounded-md px-3 py-1 ml-2">ایران</span>گذر
+                </a>
+            </div>
+            <ul class="hidden lg:flex space-x-4 space-x-reverse items-center">
+                <li><a href="#home" class="text-gray-700 hover:text-primary transition duration-300">صفحه نخست</a></li>
+                <li><span class="nav-divider">|</span></li>
+                <li><a href="#products" class="text-gray-700 hover:text-primary transition duration-300">تعرفه‌ها</a></li>
+                <li><span class="nav-divider">|</span></li>
+                <li><a href="#servers" class="text-gray-700 hover:text-primary transition duration-300">وضعیت سرورها</a></li>
+                <li><span class="nav-divider">|</span></li>
+                <li><a href="#reviews" class="text-gray-700 hover:text-primary transition duration-300">نظرات کاربران</a></li>
+                <li><span class="nav-divider">|</span></li>
+                <li><a href="#faq" class="text-gray-700 hover:text-primary transition duration-300">سوالات متداول</a></li>
+                <li>
+                    <a href="https://t.me/mykalikal" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded-full transition duration-300">تماس با ما</a>
+                </li>
+            </ul>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none" aria-label="باز کردن منوی موبایل">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18V6H3v2z"/>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden bg-white shadow-md absolute top-full right-0 left-0 z-10">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#home" class="block text-gray-700 hover:bg-gray-100 py-2 rounded-md transition duration-300">صفحه نخست</a></li>
+                <li><a href="#products" class="block text-gray-700 hover:bg-gray-100 py-2 rounded-md transition duration-300">تعرفه‌ها</a></li>
+                <li><a href="#servers" class="block text-gray-700 hover:bg-gray-100 py-2 rounded-md transition duration-300">وضعیت سرورها</a></li>
+                <li><a href="#reviews" class="block text-gray-700 hover:bg-gray-100 py-2 rounded-md transition duration-300">نظرات کاربران</a></li>
+                <li><a href="#faq" class="block text-gray-700 hover:bg-gray-100 py-2 rounded-md transition duration-300">سوالات متداول</a></li>
+                <li>
+                    <a href="https://t.me/mykalikal" target="_blank" rel="noopener noreferrer" class="block bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-center">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="bg-gray-100 py-12 mt-16">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">IP ایران گذر - دسترسی به سایت‌های ایرانی از خارج</h1>
+            <p class="max-w-2xl mx-auto text-lg text-gray-700 mb-8">
+                با IP ایران گذر، از هر نقطه دنیا به راحتی به همراه بانک، پیام‌رسان‌های ایرانی، سایت‌های دولتی و خدمات داخلی دسترسی پیدا کنید. سرویس پایدار و پرسرعت برای ایرانیان مقیم خارج.
+            </p>
+            <div class="home-buttons flex flex-col md:flex-row justify-center gap-4">
+                <a href="#products" class="inline-block bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-full transition duration-300">خرید IP ایران</a>
+                <a href="#faq" class="inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-full transition duration-300">سوالات متداول</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">تعرفه‌های IP ایران گذر</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-2 border-primary">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">پلن یک ماهه</h3>
+                    <p class="text-gray-600 mb-4">مناسب برای آزمایش و استفاده کوتاه مدت</p>
+                    <ul class="text-gray-600 mb-3 text-right">
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>IP ایران ثابت</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>دسترسی به همراه بانک</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>پیام‌رسان‌های ایرانی</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>سایت‌های دولتی</li>
+                    </ul>
+                    <p class="text-primary font-bold text-lg mb-2">7 دلار</p>
+                    <p class="text-gray-600 text-sm mb-4">معادل ۴۹۰,۰۰۰ تومان</p>
+                    <button onclick="openPurchasePopup()" class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-full transition duration-300 w-full" aria-label="خرید پلن یک ماهه">خرید</button>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-2 border-primary relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-sm">محبوب</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">پلن سه ماهه</h3>
+                    <p class="text-gray-600 mb-4">مناسب برای استفاده متوسط مدت با تخفیف</p>
+                    <ul class="text-gray-600 mb-3 text-right">
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>IP ایران ثابت</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>دسترسی به همراه بانک</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>پیام‌رسان‌های ایرانی</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>سایت‌های دولتی</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>پشتیبانی اولویت‌دار</li>
+                    </ul>
+                    <p class="text-primary font-bold text-lg mb-2">15 دلار</p>
+                    <p class="text-gray-600 text-sm mb-4">معادل ۱,۰۵۰,۰۰۰ تومان</p>
+                    <button onclick="openPurchasePopup()" class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-full transition duration-300 w-full" aria-label="خرید پلن سه ماهه">خرید</button>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-2 border-primary">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">پلن شش ماهه</h3>
+                    <p class="text-gray-600 mb-4">بهترین قیمت برای استفاده طولانی مدت</p>
+                    <ul class="text-gray-600 mb-3 text-right">
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>IP ایران ثابت</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>دسترسی به همراه بانک</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>پیام‌رسان‌های ایرانی</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>سایت‌های دولتی</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>پشتیبانی اولویت‌دار</li>
+                        <li><svg class="inline-block w-5 h-5 ml-2 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 11.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>بهترین قیمت</li>
+                    </ul>
+                    <p class="text-primary font-bold text-lg mb-2">28 دلار</p>
+                    <p class="text-gray-600 text-sm mb-4">معادل ۱,۹۶۰,۰۰۰ تومان</p>
+                    <button onclick="openPurchasePopup()" class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-full transition duration-300 w-full" aria-label="خرید پلن شش ماهه">خرید</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servers" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold text-gray-800 mb-10">وضعیت سرورهای IP ایران</h2>
+            <div class="max-w-5xl mx-auto">
+                <table class="w-full border-collapse rounded-lg overflow-hidden shadow-md">
+                    <thead>
+                        <tr class="bg-primary text-white">
+                            <th class="p-4 text-right">سرور</th>
+                            <th class="p-4 text-left">پینگ (ms)</th>
+                            <th class="p-4 text-left">وضعیت</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr class="border-b">
+                            <td class="p-4 text-right">
+                                <img src="https://flagcdn.com/w20/ir.png" alt="پرچم ایران" class="inline-block w-6 h-6 ml-2" width="24" height="24" loading="lazy"> 
+                                برج آزادی
+                            </td>
+                            <td class="p-4 text-left text-green-600 ping-azadi">25</td>
+                            <td class="p-4 text-left">پایدار</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 text-right">
+                                <img src="https://flagcdn.com/w20/ir.png" alt="پرچم ایران" class="inline-block w-6 h-6 ml-2" width="24" height="24" loading="lazy"> 
+                                اروان
+                            </td>
+                            <td class="p-4 text-left text-green-600 ping-arvan">30</td>
+                            <td class="p-4 text-left">پایدار</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="reviews" class="max-w-5xl mx-auto mt-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">نظرات کاربران IP ایران گذر</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <h4>علی از آلمان</h4>
+                        <p>عالی! حالا می‌تونم از آلمان راحت به همراه بانک وصل بشم. سرعت خیلی خوبه.</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>مریم از کانادا</h4>
+                        <p>خیلی ممنونم. از کانادا بدون مشکل به تمام سایت‌های ایرانی دسترسی دارم.</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>حسین از انگلیس</h4>
+                        <p>بهترین سرویس IP ایران که استفاده کردم. پایدار و سریع.</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>زهرا از استرالیا</h4>
+                        <p>از استرالیا به راحتی به پیام‌رسان‌های ایرانی وصل می‌شم. عالیه!</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>محمد از آمریکا</h4>
+                        <p>دیگه نگران همراه بانک نیستم. از آمریکا بدون مشکل استفاده می‌کنم.</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>نظر شما</h4>
+                        <p>تجربه خود از IP ایران گذر را با ما به اشتراک بگذارید!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="faq" class="max-w-5xl mx-auto mt-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">سوالات متداول IP ایران گذر</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <details>
+                            <summary>IP ایران گذر چیست و چه کاربردی دارد؟</summary>
+                            <div class="faq-content">
+                                IP ایران گذر سرویسی است که به شما امکان دسترسی به سایت‌های ایرانی از خارج کشور را می‌دهد. با این سرویس می‌توانید به همراه بانک، پیام‌رسان‌های ایرانی، سایت‌های دولتی و سرویس‌های داخلی دسترسی پیدا کنید.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>آیا با IP ایران می‌توانم به همراه بانک دسترسی داشته باشم؟</summary>
+                            <div class="faq-content">
+                                بله، با IP ایران گذر می‌توانید از هر نقطه دنیا به اپلیکیشن همراه بانک‌های مختلف ایران دسترسی داشته باشید و عملیات بانکی خود را انجام دهید.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>چگونه IP ایران گذر خریداری کنم؟</summary>
+                            <div class="faq-content">
+                                از بخش تعرفه‌ها پلن موردنظر را انتخاب کنید و با کلیک روی دکمه خرید، از طریق تلگرام با پشتیبانی ما در ارتباط باشید. پرداخت با کارت، کریپتو و تتر امکان‌پذیر است.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>IP ایران در تمام دستگاه‌ها قابل استفاده است؟</summary>
+                            <div class="faq-content">
+                                بله، IP ایران گذر در تمام دستگاه‌ها شامل موبایل (اندروید و iOS)، کامپیوتر (ویندوز، مک، لینوکس) و حتی روتر قابل تنظیم و استفاده است.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>آیا از کیفیت و سرعت IP ایران اطمینان دارید؟</summary>
+                            <div class="faq-content">
+                                بله، ما از سرورهای پرسرعت و پایدار در ایران استفاده می‌کنیم. IP های ما ثابت بوده و قطعی ندارند. همچنین پشتیبانی 24 ساعته در خدمت شما هستیم.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="purchase-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">خرید IP ایران گذر</h3>
+            <div class="space-y-4">
+                <a href="https://t.me/mykalikal" target="_blank" rel="noopener noreferrer" class="block bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-full text-center transition duration-300">سفارش از طریق تلگرام</a>
+                <p class="text-center text-gray-600 text-sm">پشتیبانی 24 ساعته | پرداخت با کارت، کریپتو و تتر</p>
+            </div>
+            <button onclick="closePurchasePopup()" class="mt-6 w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-full transition duration-300" aria-label="بستن پنجره خرید">بستن</button>
+        </div>
+    </div>
+
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <div class="container mx-auto px-4">
+            <p class="mb-2">© ۱۴۰۴ ایران گذر. تمامی حقوق محفوظ است.</p>
+            <p>
+                <a href="#products" class="text-purple-400 hover:underline mx-2">خرید IP ایران</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://t.me/mykalikal" class="text-purple-400 hover:underline mx-2">تماس با ما</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        function openPurchasePopup() {
+            const popup = document.getElementById('purchase-popup');
+            if (popup) {
+                popup.classList.remove('hidden');
+            }
+        }
+
+        function closePurchasePopup() {
+            const popup = document.getElementById('purchase-popup');
+            if (popup) popup.classList.add('hidden');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closePurchasePopup();
+            }
+        });
+
+        document.querySelectorAll('.faq-item details').forEach((detail) => {
+            detail.addEventListener('toggle', () => {
+                if (detail.open) {
+                    document.querySelectorAll('.faq-item details').forEach((otherDetail) => {
+                        if (otherDetail !== detail && otherDetail.open) {
+                            otherDetail.open = false;
+                        }
+                    });
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        function updatePings() {
+            const azadiPing = document.querySelector('.ping-azadi');
+            if (azadiPing) azadiPing.textContent = Math.floor(Math.random() * (35 - 20 + 1)) + 20;
+            
+            const arvanPing = document.querySelector('.ping-arvan');
+            if (arvanPing) arvanPing.textContent = Math.floor(Math.random() * (40 - 25 + 1)) + 25;
+        }
+        updatePings();
+        setInterval(updatePings, 5000);
+    </script>
+</body>
+</html>
