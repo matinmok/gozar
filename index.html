@@ -333,7 +333,7 @@
                     <tbody class="bg-white">
                         <tr class="border-b">
                             <td class="p-3 text-right text-lg">
-                                <img src="https://flagcdn.com/24x18/ir.png" alt="پرچم ایران" class="inline-block w-6 h-4.5 ml-1" width="24" height="18" loading="lazy"> 
+                                <img src="https://flagcdn.com/24x18/ir_pahlavi.png" alt="پرچم شاهنشاهی ایران" class="inline-block w-6 h-4.5 ml-1" width="24" height="18" loading="lazy"> 
                                 برج آزادی
                             </td>
                             <td class="p-3 text-left text-green-600 ping-azadi text-lg">25</td>
@@ -341,7 +341,7 @@
                         </tr>
                         <tr class="border-b">
                             <td class="p-3 text-right text-lg">
-                                <img src="https://flagcdn.com/24x18/ir.png" alt="پرچم ایران" class="inline-block w-6 h-4.5 ml-1" width="24" height="18" loading="lazy"> 
+                                <img src="https://flagcdn.com/24x18/ir_pahlavi.png" alt="پرچم شاهنشاهی ایران" class="inline-block w-6 h-4.5 ml-1" width="24" height="18" loading="lazy"> 
                                 اروان
                             </td>
                             <td class="p-3 text-left text-green-600 ping-arvan text-lg">30</td>
@@ -525,16 +525,16 @@
                     rate = parseFloat(coingeckoData.usd.irr) / 10; // Convert IRR to Toman
                     console.log('CoinGecko rate:', rate);
                 } else {
-                    // Try ExchangeRate-API
-                    console.log('Fetching from ExchangeRate-API...');
-                    const exchangeRateResponse = await fetch('https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD', { 
+                    // Try OpenExchangeRates API
+                    console.log('Fetching from OpenExchangeRates...');
+                    const openExchangeResponse = await fetch('https://openexchangerates.org/api/latest.json?app_id=YOUR_API_KEY', { 
                         mode: 'cors',
                         cache: 'no-store'
                     });
-                    if (exchangeRateResponse.ok) {
-                        const exchangeRateData = await exchangeRateResponse.json();
-                        rate = parseFloat(exchangeRateData.conversion_rates.IRR) / 10; // Convert IRR to Toman
-                        console.log('ExchangeRate-API rate:', rate);
+                    if (openExchangeResponse.ok) {
+                        const openExchangeData = await openExchangeResponse.json();
+                        rate = parseFloat(openExchangeData.rates.IRR) / 10; // Convert IRR to Toman
+                        console.log('OpenExchangeRates rate:', rate);
                     } else {
                         throw new Error('All APIs failed');
                     }
