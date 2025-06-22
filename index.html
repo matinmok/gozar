@@ -51,6 +51,15 @@
             font-style: normal;
             font-display: swap;
         }
+        .hero-card {
+            background: #fff;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: var(--tw-shadow-card);
+            max-width: 600px;
+            margin: 0 auto;
+        }
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -142,7 +151,7 @@
             opacity: 0;
         }
         .faq-item details[open] .faq-content {
-            max-height: 300px;
+            max-height: 500px;
             opacity: 1;
         }
         .nav-divider {
@@ -176,13 +185,34 @@
         .popular-badge {
             margin-bottom: 2rem;
         }
-        @media (max-width: 768px) {
+        #server-table {
+            table-layout: fixed;
+        }
+        #server-table th, #server-table td {
+            word-wrap: break-word;
+        }
+        @media (max-width: 1024px) {
+            .plan-card {
+                padding: 2rem;
+            }
             .reviews-grid {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
             .review-card {
                 padding: 1.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-card {
+                padding: 2rem;
+            }
+            .plan-card {
+                padding: 1.5rem;
+            }
+            .plan-card button {
+                height: 3rem;
+                font-size: 1rem;
             }
             .faq-item summary {
                 font-size: 1.125rem;
@@ -207,14 +237,39 @@
                 padding: 0.75rem;
                 font-size: 1.125rem;
             }
-            .plan-card {
-                padding: 2rem;
+            #server-table th, #server-table td {
+                font-size: 0.875rem;
+                padding: 0.75rem;
+            }
+            #server-table th:nth-child(1), #server-table td:nth-child(1) {
+                width: 30%;
+            }
+            #server-table th:nth-child(2), #server-table td:nth-child(2) {
+                width: 20%;
+            }
+            #server-table th:nth-child(3), #server-table td:nth-child(3) {
+                width: 30%;
+            }
+            #server-table th:nth-child(4), #server-table td:nth-child(4) {
+                width: 20%;
             }
         }
         @media (max-width: 640px) {
+            .hero-card {
+                padding: 1.5rem;
+            }
             .home-buttons a {
                 padding: 0.75rem;
                 font-size: 1rem;
+            }
+            .plan-card {
+                padding: 1.25rem;
+            }
+            #server-table {
+                font-size: 0.75rem;
+            }
+            #server-table th, #server-table td {
+                padding: 0.5rem;
             }
         }
     </style>
@@ -263,13 +318,15 @@
 
     <section id="home" class="bg-white py-12 mt-16">
         <div class="container mx-auto text-center px-4">
-            <h1 class="text-3xl font-bold text-gray-800 mb-4">IP ایران گذر</h1>
-            <p class="max-w-md mx-auto text-lg text-gray-600 mb-6">
-                دسترسی سریع و پایدار به خدمات ایرانی از سراسر جهان
-            </p>
-            <div class="home-buttons flex flex-col md:flex-row justify-center gap-3">
-                <a href="#products" class="inline-block bg-primary hover:bg-primary-dark text-white text-lg font-semibold py-2 px-6 rounded-full transition duration-200" aria-label="خرید IP ایران">خرید IP ایران</a>
-                <a href="#faq" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 text-lg font-semibold py-2 px-6 rounded-full transition duration-200" aria-label="مشاهده سوالات متداول">سوالات متداول</a>
+            <div class="hero-card">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">IP ایران گذر</h1>
+                <p class="max-w-md mx-auto text-lg text-gray-600 mb-6">
+                    دسترسی سریع و پایدار به خدمات ایرانی از سراسر جهان
+                </p>
+                <div class="home-buttons flex flex-col md:flex-row justify-center gap-3">
+                    <a href="#products" class="inline-block bg-primary hover:bg-primary-dark text-white text-lg font-semibold py-2 px-6 rounded-full transition duration-200" aria-label="خرید IP ایران">خرید IP ایران</a>
+                    <a href="#faq" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 text-lg font-semibold py-2 px-6 rounded-full transition duration-200" aria-label="مشاهده سوالات متداول">سوالات متداول</a>
+                </div>
             </div>
         </div>
     </section>
@@ -461,7 +518,7 @@
                         <details>
                             <summary>IP ایران گذر چیست؟</summary>
                             <div class="faq-content">
-                                دسترسی به خدمات ایرانی از خارج کشور.
+                                ایران گذر یک سرویس ارائه‌دهنده آی‌پی ثابت ایرانی است که به کاربران خارج از ایران امکان دسترسی سریع و امن به خدمات آنلاین ایرانی مانند همراه بانک، پیام‌رسان‌های داخلی، سایت‌های دولتی و سایر پلتفرم‌های محدود شده را فراهم می‌کند. این سرویس با استفاده از سرورهای پایدار و پرسرعت، تجربه‌ای مشابه حضور در ایران را برای شما ایجاد می‌کند.
                             </div>
                         </details>
                     </div>
@@ -469,7 +526,7 @@
                         <details>
                             <summary>آیا همراه بانک کار می‌کند؟</summary>
                             <div class="faq-content">
-                                بله، همراه بانک‌ها از هر کجا قابل دسترسی‌اند.
+                                بله، سرویس IP ایران گذر به‌طور کامل با اپلیکیشن‌های همراه بانک ایرانی سازگار است. شما می‌توانید از هر نقطه‌ای در جهان به حساب‌های بانکی خود دسترسی داشته باشید، تراکنش‌های مالی انجام دهید و از خدمات بانکی آنلاین بدون محدودیت استفاده کنید. این سرویس با اکثر بانک‌های ایرانی آزمایش شده و عملکرد بی‌نقصی دارد.
                             </div>
                         </details>
                     </div>
@@ -477,7 +534,7 @@
                         <details>
                             <summary>چگونه خرید کنم؟</summary>
                             <div class="faq-content">
-                                پلن را انتخاب کنید و از تلگرام تماس بگیرید.
+                                برای خرید، ابتدا یکی از پلن‌های یک ماهه، سه ماهه یا شش ماهه را از بخش تعرفه‌ها انتخاب کنید. سپس از طریق دکمه «خرید» به صفحه پشتیبانی تلگرام هدایت می‌شوید. در آنجا می‌توانید جزئیات پلن موردنظر خود را با تیم پشتیبانی هماهنگ کرده و مراحل پرداخت را تکمیل کنید. پشتیبانی ۲۴ ساعته ما آماده پاسخگویی به شماست.
                             </div>
                         </details>
                     </div>
@@ -485,7 +542,15 @@
                         <details>
                             <summary>روی چه دستگاه‌هایی کار می‌کند؟</summary>
                             <div class="faq-content">
-                                موبایل، کامپیوتر و روتر.
+                                سرویس IP ایران گذر روی تمامی دستگاه‌های متداول از جمله گوشی‌های موبایل (اندروید و iOS)، کامپیوترهای شخصی (ویندوز، مک و لینوکس) و حتی روترها قابل استفاده است. پس از خرید، راهنمای تنظیمات برای هر دستگاه به شما ارائه می‌شود تا بتوانید به‌راحتی سرویس را راه‌اندازی کنید.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>آیا امنیت اطلاعات من تضمین شده است؟</summary>
+                            <div class="faq-content">
+                                بله، ایران گذر از پروتکل‌های امنیتی پیشرفته برای محافظت از اطلاعات کاربران استفاده می‌کند. تمامی ارتباطات شما رمزنگاری شده و حریم خصوصی شما حفظ می‌شود. ما هیچ‌گونه اطلاعاتی از فعالیت‌های آنلاین شما ذخیره یا ردیابی نمی‌کنیم.
                             </div>
                         </details>
                     </div>
